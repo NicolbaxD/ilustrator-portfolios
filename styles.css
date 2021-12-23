@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.body::-webkit-scrollbar{ /*personalizar la barra lateral*/
+    width: 10px;
+    background:linear-gradient(to bottom, hsl(0, 100%, 77%), hsl(305, 100%, 74%), hsl(251, 100%, 70%));
+}
+
+.body::-webkit-scrollbar-thumb{ /*personalizar la barra lateral*/
+    background-color:rgba(255, 255, 255, 0.849);
+    border-radius: 50px;
+}
+
+
+/*Cabezera*/
+
+
+nav{
+    background-color: #00000009;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav >li{
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 0px 20px 10px 0px;
+}
+
+nav >li:hover{
+    color:wheat;
+    font-weight: 300;
+    text-decoration:wavy; color: wheat;
+    margin-right: 10px;
+    font-weight: 1000;
+}
+.home{
+    height: 30px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+
+.title {
+    color: #642a73;
+    font-size: 30p x;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.header{
+    width: 100%;
+    height: 600px;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsl(39, 89%, 54%), hsl(352, 100%, 62%), hsl(302, 98%, 57%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(39, 89%, 54%), hsl(352, 100%, 57%), hsl(318, 98%, 57%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+.textheader{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textheader h1{
+    text-align: center;
+    font-size: 50px;/*font size sirve para aumentar o disminuir el tamaño*/
+    font-weight: 700;/*font weight sirve para aumentar o disminuir el grosor*/
+    color: white;/*sirve para cambiarle el color*/
+}
+
+.textheader h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color:wheat;
+
+}
+
+.ig{
+    height: 100px;
+    padding-top: 20px;
+    float: center;
+}
+
+.wave{
+    position: relative; /*para simplificar lo que hace esta operacion es hacer que la imagen este junto a otro objeto de manera justificada o de manera relativa (si queres que este todo mal ubicado )*/
+    bottom: 0px;
+    width: 100%;
+}
+
+.title {
+    line-height: 100px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+/*Info*/
+
+.main{
+    padding-top: 35px;
+    padding-bottom: 120px;
+    padding-right: 30px;
+    width: 90%;
+    max-width: auto;
+    margin: auto;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(97));
+}
+
+
+.port {
+    padding-right: 50px;
+    text-align: right;
+    padding-bottom: 40px; 
+    -webkit-text-stroke-width: 1px; /*cambiar el grosor*/
+    -webkit-text-stroke-color:#a200ff; /*cambiar color*/
+}
+.part {
+    text-shadow: 7px 7px #00d9ff6b;
+}
+.yo{
+    max-width: 750px; /*limita el tamaño maximo de la imagen*/
+    min-width: 250px; /*limita el tamaño minimo de la imagen*/
+    border-radius: 50%;/*forma circular de la imagen*/
+    box-shadow:20px 20px 20px rgba(7, 0, 104, 0.5); /*Sombra*/
+    float: right;
+    width: 30%;
+}
+.oval{
+    position: absolute;
+    width: 30%;
+    opacity: 80%;
+}
+
+.datos{
+    padding-right: 20px;
+    float:right;
+    padding-top: 35px;
+}
+
+.datos h1{
+    background:linear-gradient(to left, #ff9900cc, #cc00ffb2);
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom:10px ;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 10px;
+}
+.datos h2{
+
+    font-size: 35px;
+    font-weight:10;
+    text-align: right;
+}
+
+
+/*Ilustraciones*/
+
+.main2{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ea00ff,#0072ff, #00eeff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#ea00ff, #0072ff, #00eeff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+.main2 h1{
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-size: 50px;
+   
+    text-align: center;
+    color: white;
+}
+
+.ilus{
+    flex-wrap: wrap;
+    display: flex; /*hace que las imagenes esten alado de la otra sirve mucho*/
+    padding:5px;
+}
+.ilus img{
+    filter: blur(2px); /*-1  las imagenes se pusieron borrosas*/
+    width: 100%;
+    transition:filter 0.9s;
+    transition: transform 0.5s;
+    
+}
+
+.colum{
+    flex: 33%;/*para que se muestren cuantas imagenes querramos alado de otra*/
+    padding: 10px;
+}
+.colum img{
+    margin-top: 10px;
+    border-radius: 50px;
+    
+    
+}
+
+@media (max-width:800px){   /*estos tienen una utilidad muy importante ya que lo que hacen es poner una condicional, en caso de que la cantidad de pixeles sea la que nosotros colocamos esta realizara una operacion, en este caso le pedi que se divida ala mitad*/
+    .colum{
+        flex:50%; 
+    }
+}
+@media (max-width:600px){
+    .colum{
+        flex:100%;
+    }
+}
+
+/*animaciones*/
+
+.ilus > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.ilus a:hover img{
+    filter: blur(0); /*las imagenes dejaron de ser borrosas*/
+    transform: scale(1.02); /*la imagenes aumentaron el tamaño*/
+    transition:filter 0.2s;
+    transition: transform 0.5s;
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);  
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    
+}
+.light-box img{
+    filter: blur(0px);
+    border-radius: 50px;
+    width: 39%;
+    max-height: 97%;
+    min-width: 350px;
+    min-height: 30px;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background:rgba(0, 0, 0, 0.425);
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight:900;
+}
+
+.next{
+    display: block;
+    background: rgba(0, 0, 0, 0.425);
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight:900;
+}
+
+/*Footer*/
+
+.content-foo{
+    padding-top: 10px;
+    padding-left: 10px;
+}
